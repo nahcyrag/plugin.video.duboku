@@ -39,7 +39,8 @@ class Request(object):
         Log.info('[plugin.video.duboku] GET "{}"'.format(url))
        user_agent_headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
-        if response.status_code == 200:
+        
+if response.status_code == 200:
             return response.text
 
         raise Exception()
